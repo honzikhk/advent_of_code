@@ -1,5 +1,5 @@
 
-input_file = "test_6.sql"
+input_file = "input_6.sql"
 
 def get_lines_one_list_raw(file):
     with open(file, "r") as file:
