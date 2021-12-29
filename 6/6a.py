@@ -1,5 +1,5 @@
 
-input_file = "input_6.sql"
+input_file = "test_6.sql"
 
 def get_lines_one_list_raw(file):
     with open(file, "r") as file:
@@ -49,10 +49,7 @@ def check_six_and_zeros_add_eight_and_sixs(list):
 def iteration(list):
     temp_list = list
     cnt = 0
-    while cnt < 256:
-        #print(temp_list)
-        #cont = int(input(f"Cnt: {cnt}. Put 1 for another step: "))
-        #if cont == 1:
+    while cnt < 80:
         temp_list = minus_one(temp_list)
         temp_list = check_six_and_zeros_add_eight_and_sixs(temp_list)
         cnt += 1
